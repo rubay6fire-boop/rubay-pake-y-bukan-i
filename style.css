@@ -6,17 +6,19 @@ body {
 
 .kartu-profil {
     width: 300px;
-    margin: 50px auto; /* 40px jarak atas/bawah, auto menengahkan kiri/kanan */
+    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
     padding: 20px;
     background-color: white;
     border-radius: 15px; /* membuat sudut menjadi melengkung */
-    box-shadow: 0 4x 8px rgba(0,0,0,0,1); /* efek bayangan */
-    teks-align: center; /* menengahkan semua teks di dalam kartu */
+    
+    /* PERBAIKAN A: box-shadow dengan satuan 'px' yang benar dan alpha value yang sesuai */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    
+    /* PERBAIKAN B: Menggunakan properti text-align yang benar */
+    text-align: center; 
 }
-
 
 .kartu-profil img {
     width: 150px;
     border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
 }
-    
